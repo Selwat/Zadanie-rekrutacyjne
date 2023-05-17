@@ -9,8 +9,6 @@ body, ul {
     overflow-x: hidden;
 }
 
-/* Główne style */
-
 .header {
     background-image: url(../images/background.png);
     background-position: center;
@@ -20,8 +18,6 @@ body, ul {
     height: 80vh;
 }
 
-/* Nav Styling */
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,16 +25,17 @@ nav {
     height: 8vh;
     position: relative;
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
     width: 55%;
     justify-content: space-around;
 }
+
 nav h2{
     padding: 30px;
 }
-/* Burger Styling */
 
 .burger {
     background: transparent;
@@ -47,10 +44,12 @@ nav h2{
     cursor: pointer;
     display: none;
 }
+
 .menu{
     width: 35vw;
     margin-left: 0;
 }
+
 .line {
     width: 3em;
     height: .3em;
@@ -88,7 +87,6 @@ nav h2{
         text-align: center;
         transform: translate(100%);
         transition: .3s ease-in-out;
-    
     }
 
     ul.active {
@@ -105,6 +103,7 @@ nav h2{
     color: #000000;
     font-size: 3em;
 }
+
 .nav__item {
     font-size: 23px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -114,7 +113,6 @@ nav h2{
     color: rgb(4, 4, 4);
     text-decoration: none;
 }
-
 
 .header_product {
     display: flex;
@@ -137,8 +135,8 @@ nav h2{
     margin-top: 0;
     font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
+
 .header_product_button {
 	background-color:#90c8eb;
     border: none;
@@ -152,33 +150,34 @@ nav h2{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 2vh;
 }
+
 .header_product_button:hover {
 	background-color:#79bee8;
 }
-
-      
 
 .description{
     display: flex;
     flex-direction: column;
     text-align:center;
     padding: 50px 5vw;
-
 }
+
 .description_title{
     font-weight: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
-    
 }
+
 .description_contents{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 30px;
 }
+
 .product{
     background-color: #89cef8;
     text-align: center;
 }
+
 .product_selection{
     display: flex;
     justify-content:space-around;
@@ -187,6 +186,7 @@ nav h2{
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .product_selection_title {
  padding: 50px 0px 0px 0px;
 }
@@ -194,12 +194,15 @@ nav h2{
 .product_selection_product_1_img{
     width: 250px;
 }
+
 .product_selection_product_2_img{
     width: 250px;
 }
+
 .product_selection_product_3_img{
     width: 250px;
 }
+
 .product_selection_product_1_button, .product_selection_product_2_button, .product_selection_product_3_button {
 	background-color:#dfad41;
     border: none;
@@ -236,8 +239,8 @@ nav h2{
 .gameRules_column_1 {
     grid-area: 1 / 1 / 2 / 2; 
     text-align: left;
-
 }
+
 .gameRules_img {
     grid-area: 1 / 2 / 2 / 3;
     width: 450px;
@@ -246,9 +249,11 @@ nav h2{
 .gameRules_title{
     font-size: 30px;
 }
+
 .gameRules_description{
     font-size:20px;
 }
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -256,8 +261,7 @@ nav h2{
     display: flex;
     justify-content:space-around;
     font-size:1.5vw;
-  }
-
+}
 
 @media only screen and (max-width: 760px) {
     ul {
@@ -284,11 +288,9 @@ nav h2{
     .header_product_button{
         margin-top:-1vh;
     }
-
-    
   }
   
-  @media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
     .header_product {
         padding: 90px 12vw;
     }
