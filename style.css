@@ -1,0 +1,322 @@
+:root {
+    --blue:  #ffffff;
+    --blueHover:  #9549c7;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Główne style */
+
+.header {
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+}
+
+/* Nav Styling */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    position: relative;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+}
+nav h2{
+    padding: 30px;
+}
+/* Burger Styling */
+
+.burger {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.menu{
+    width: 35vw;
+    margin-left: 0;
+}
+.line {
+    width: 3em;
+    height: .3em;
+    background: var(--blue);
+    margin: .7em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    .burger {
+        display: block;
+        transition: .3s ease-in-out;
+        margin-right: 20px;
+    }
+    .burger.active .line:first-child {
+        transform: translateY(-300px);
+    }
+
+    .burger.active .line:nth-child(2) {
+        transform: rotate(-405deg) translateY(8px);
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-320deg) translateY(-10px);
+    }
+    .menu {
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        width: 100vw;
+        background-color: var(--blue);
+        height: 25vh;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+    
+    }
+
+    ul.active {
+        transform: translate(0%);
+    }
+    a {
+        color: whitesmoke;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+nav h2{
+    color: #000000;
+    font-size: 3em;
+}
+.nav__item {
+    font-size: 23px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav__link {
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+}
+
+
+.header_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 40vw;
+    padding: 150px 12vw;
+    color: #fff;
+}
+
+.header_product_title {
+    margin-bottom: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+.header_product_describe {
+    margin-top: 0;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.header_product_button {
+	background-color:#90c8eb;
+    border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 61px;
+	text-decoration:none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2vh;
+}
+.header_product_button:hover {
+	background-color:#79bee8;
+}
+
+      
+
+.description{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    padding: 50px 5vw;
+
+}
+.description_title{
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    
+}
+.description_contents{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 30px;
+}
+.product{
+    background-color: #89cef8;
+    text-align: center;
+}
+.product_selection{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product_selection_title {
+ padding: 50px 0px 0px 0px;
+}
+
+.product_selection_product_1_img{
+    width: 250px;
+}
+.product_selection_product_2_img{
+    width: 250px;
+}
+.product_selection_product_3_img{
+    width: 250px;
+}
+.product_selection_product_1_button, .product_selection_product_2_button, .product_selection_product_3_button {
+	background-color:#dfad41;
+    border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 61px;
+	text-decoration:none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2vh;
+}
+
+.gameRules{
+    background-image: url(../images/bg-grid.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    text-align: center;
+    margin:0px 10vw;
+    gap: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gameRules_column_1 {
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: left;
+
+}
+.gameRules_img {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 450px;
+}
+
+.gameRules_title{
+    font-size: 30px;
+}
+.gameRules_description{
+    font-size:20px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+    font-size:1.5vw;
+  }
+
+
+@media only screen and (max-width: 760px) {
+    ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__list {
+      flex-direction: column;
+    }
+  
+    .nav__item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    .header_product {
+        padding: 100px 12vw;
+    }
+    .header_product_title {
+        font-size: 70px;
+    }
+    .header_product_button{
+        margin-top:-1vh;
+    }
+
+    
+  }
+  
+  @media screen and (max-width: 1180px) {
+    .header_product {
+        padding: 90px 12vw;
+    }
+    .header_product_title {
+        font-size: 70px;
+    }
+    .header_product_button{
+        margin-top:-1vh;
+    }
+    .gameRules{
+        display: block;
+        flex-direction: row;
+        margin:50px 0px;
+    }
+    .gameRules_img {
+        width: 350px;
+        grid-area: 2 / 1 / 3 / 2;
+        margin-top: 10px;
+    }
+    .gameRules_column_1 {
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+    }
+    .gameRules_title{
+        font-size: 25px;
+    }
+    .gameRules_description{
+        font-size:16px;
+        padding: 20px;
+    }
+  }

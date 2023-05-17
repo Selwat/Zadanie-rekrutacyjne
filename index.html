@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+
+          <nav>
+            <h2>Zabawki.pl</h2>
+            <ul class="menu">
+                <li class="nav__item"><a href="#" class="nav__link">Cennik</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">O nas</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
+            </ul>
+    
+            <button class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </nav>
+        
+
+
+        <div class="header_product">
+            <h1 class="header_product_title">POP IT!</h1>
+            <h4 class="header_product_describe">Najlepsza zabawka antystresowa - Niekącząca<br> się folia bombelkowa!</h4>
+            <button class="header_product_button">KUP</button>
+        </div>
+    </header>
+
+    <div class="description">
+        <h3 class="description_title">Co to jest Pop?</h3>
+        <p class="description_contents">Pop tłumaczy się dosłownie jako "pop it". To dziecięca zabawa, której dźwięk można porównać do pękania folii bąbelkowej.<br> 
+        Jednak w przeciwieństwie do folii, Pop it można wyciskać z charakterystycznymi doznaniami i dźwiękami "w nieskończoność". 
+        <br>Składa się ono z dziesiątek silikonowych bąbelków, które po prostu wypycha się na drugą stronę.</p>
+    </div>
+    <div class="product">
+        <h2 class="product_selection_title">Wybierz swojego Pop-It!</h2>
+        <div class="product_selection">
+            <div class="product_selection_product_1">
+                <img src="./images/square.png" class="product_selection_product_1_img">
+                <h4>Wielokolorowy kwadrat</h4>
+                <button class="product_selection_product_1_button">KUP</button>
+            </div>
+            <div class="product_selection_product_2">
+                <img src="./images/amongus.png" class="product_selection_product_2_img">
+                <h4>Among Us, wśród nas</h4>
+                <button class="product_selection_product_2_button">KUP</button>
+            </div>
+            <div class="product_selection_product_3">
+                <img src="./images/round.png" class="product_selection_product_3_img">
+                <h4>Kolorowe koło</h4>
+                <button class="product_selection_product_3_button">KUP</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="gameRules">
+        <div class="gameRules_column_1">
+        <h2 class="gameRules_title">Zasady Gry</h2>
+        <p class="gameRules_description">Gracze na zmianę klikają na bombelki. Konieczne jest dokończenie rozpoczętej serii.<br> Możesz wcisnąć
+        maksymalnie 3 bombelki jednocześnie (muszą być w pobliżu, <br>nie możesz wcisnąć kilku kulek na raz, jeśli nie są tuż obok siebie) 
+        Zadanie polega na tym,<br> aby przeciwnik wcisnął ostatni. Kto kliknie ostatni, przegrywa!</p></div>
+        <img src="./images/photo.jpg" class="gameRules_img">
+        
+    </div>
+    <footer class="footer">
+        <p class="footer__text">Zabawki.pl</p>
+        <p class="footer__text">Metody Płatności</p>
+        <p class="footer__text">Dostawa</p>
+        <p class="footer__text">Zabawki.pl</p>
+        <p class="footer__text">Hurt</p>
+        <p class="footer__text">Kontakt</p>
+      </footer>
+
+      
+      <script>
+
+        const mobileNav = document.querySelector('ul');
+        const burgerIcon = document.querySelector('.burger');
+        
+        
+        
+        burgerIcon.addEventListener('click', function(){
+            mobileNav.classList.toggle('active');
+            burgerIcon.classList.toggle('active'); 
+           
+        })
+        
+        </script>
+</body>
+</html>
